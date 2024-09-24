@@ -3,11 +3,13 @@ import React from 'react';
 import Card from '../../components/card/Card';
 import './HomePage.css';
 import chaptersData from '../../data/chaptersData.json'; // Importing the card data from JSON
+import Title from '../../components/Title/Title';
 
 const LandingPage = () => {
     return (
         <div className="landing-page">
-            <h1 className="heading">Landing Page with Cards</h1>
+            {/* <h1 className="heading">Landing Page with Cards</h1> */}
+            <Title>Chapters</Title>
             <div className="card-container">
                 {chaptersData.map((card, index) => (
                     <Card

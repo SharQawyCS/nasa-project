@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Frosted glass blur effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo styles */
+.header-logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffffff, #b0b0b0); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation */
+.header-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header-nav a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: #b0b0b0;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    letter-spacing: 1.5px;
+}
+
+/* Hover and focus states */
+.header-nav a:hover {
+    color: #ffffff; /* White on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background change */
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Glowing effect */
+}
+
+/* Starry background effect */
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px
+    );
+    background-size: 50px 50px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 30px;
+    }
+
+    .header-nav {
+        gap: 20px;
+    }
+
+    .header-logo {
+        font-size: 1.8rem;
+    }
+
+    .header-nav a {
+        font-size: 0.9rem;
+    }
+}

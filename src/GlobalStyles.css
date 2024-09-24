@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117; /* Dark background */
+    color: #ffffff; /* White text for readability */
+    background-image: url('./../public/bgImg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.app-container {
+    min-height: 100vh; /* Ensures the background covers the whole viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #ffffff;
+}
+
+/* For Links */
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #f0f0f0;
+}
+a:active {
+    color: #ffffff;
+}
+a:visited {
+    color: #ffffff;
+}
