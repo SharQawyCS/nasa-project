@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "image": "https://via.placeholder.com/300x200",
+        "title": "Card 1",
+        "description": "This is the description for card 1.",
+        "link": "/card/1"
+    },
+    {
+        "id": "2",
+        "image": "https://via.placeholder.com/300x200",
+        "title": "Card 2",
+        "description": "This is the description for card 2.",
+        "link": "/card/2"
+    },
+    {
+        "id": "3",
+        "image": "https://via.placeholder.com/300x200",
+        "title": "Card 3",
+        "description": "This is the description for card 3.",
+        "link": "/card/3"
+    }
+]

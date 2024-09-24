@@ -1,0 +1,18 @@
+/* src/LandingPage.css */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
