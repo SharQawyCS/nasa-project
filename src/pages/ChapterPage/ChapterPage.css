@@ -1,0 +1,24 @@
+.card-detail {
+    text-align: center;
+    padding: 50px;
+}
+
+.card-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card-detail img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.card-detail p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.card-not-found {
+    font-size: 2rem;
+    color: red;
+}

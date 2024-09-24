@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './LandingPage';
-import CardDetail from './CardDetail';
+import LandingPage from './pages/HomePage/HomePage';
+import CardDetail from './pages/ChapterPage/ChapterPage';
 
 function App() {
     return (

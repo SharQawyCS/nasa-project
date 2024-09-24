@@ -1,29 +1,29 @@
-// src/CardDetail.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import cardData from './cardData.json'; // Import the card data from JSON
+import chaptersData from '../../data/chaptersData.json'; // Import the card data from JSON
+import './ChapterPage.css'; // Import the CSS file
 
-const CardDetail = () => {
+const ChapterPage = () => {
     const { id } = useParams();
-    const card = cardData.find((c) => c.id === id);
+    const card = chaptersData.find((c) => c.id === id);
 
     return (
-        <div style={{ textAlign: 'center', padding: '50px' }}>
+        <div className="card-detail">
             {card ? (
                 <>
                     <h1>{card.title}</h1>
                     <img
                         src={card.image}
                         alt={card.title}
-                        style={{ width: '300px' }}
+                        className="card-image"
                     />
                     <p>{card.description}</p>
                 </>
             ) : (
-                <h1>Card not found</h1>
+                <h1 className="card-not-found">Card not found</h1>
             )}
         </div>
     );
 };
 
-export default CardDetail;
+export default ChapterPage;
