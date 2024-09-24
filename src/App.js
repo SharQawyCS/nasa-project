@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './pages/HomePage/HomePage';
-import CardDetail from './pages/ChapterPage/ChapterPage';
+import HomePage from './pages/HomePage/HomePage';
+import ChapterPage from './pages/ChapterPage/ChapterPage';
 
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/card/:id" element={<CardDetail />} />
+                <Route path="/" element={<HomePage />} />
+                <Route path="/card/:id" element={<ChapterPage />} />
             </Routes>
         </Router>
     );
