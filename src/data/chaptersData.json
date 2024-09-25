@@ -1,9 +1,9 @@
 [
     {
         "id": "1",
-        "image": "https://via.placeholder.com/300x200",
-        "title": "Card 1",
-        "description": "This is the description for card 1.",
+        "image": "https://images-assets.nasa.gov/image/PIA19344/PIA19344~orig.jpg",
+        "title": "Helium-Shrouded Planet",
+        "description": "Planets having atmospheres rich in helium may be common in our galaxy, according to a new theory based on data from NASA's Spitzer Space Telescope",
         "link": "/card/1"
     },
     {

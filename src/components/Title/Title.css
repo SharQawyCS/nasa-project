@@ -7,4 +7,8 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px; /* Space between letters */
+    background: linear-gradient(90deg, #ffffff, #b0b0b0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
