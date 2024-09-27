@@ -22,3 +22,58 @@
     font-size: 2rem;
     color: red;
 }
+
+body {
+    background-color: black;
+}
+
+.split1 {
+    border-right: 1px solid #fff;
+}
+
+.split2 {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.previous {
+    background-color: black;
+    color: white;
+}
+
+.next {
+    background-color: darkblue;
+    color: white;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 2px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+}
+
+.toolbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
