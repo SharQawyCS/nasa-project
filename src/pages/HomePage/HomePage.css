@@ -1,5 +1,5 @@
 /* src/LandingPage.css */
-.landing-page {
+.home-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,8 +11,10 @@
     margin-bottom: 30px;
 }
 
-.card-container {
+/* .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+} */
+.card-container {
 }
