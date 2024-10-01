@@ -1,30 +1,21 @@
-.card-detail {
-    text-align: center;
-    padding: 50px;
-}
-
-.card-detail h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.card-detail img {
-    width: 300px;
-    margin-bottom: 20px;
-}
-
-.card-detail p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.card-not-found {
-    font-size: 2rem;
-    color: red;
-}
-
+/* General page layout */
 body {
     background-color: black;
+    color: white;
+    margin: 0; /* Remove any default margins from the body */
+}
+
+/* Chapter Page section */
+.chapter-page {
+    width: 100vw; /* Full width viewport */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove padding if necessary */
+}
+
+/* Layout split */
+.split1, .split2 {
+    width: 50%; /* Each split takes half the width */
+    height: 100vh; /* Full viewport height */
 }
 
 .split1 {
@@ -35,6 +26,90 @@ body {
     padding: 20px;
 }
 
+/* Tabs container styling */
+.nav-tabs {
+    flex-grow: 1; /* Allows the tab container to take up the available space */
+    justify-content: center; /* Centers the tabs */
+    display: flex; /* Use flexbox for layout */
+    border-bottom: none; /* Remove bottom border */
+}
+
+/* Styling for tab items */
+.nav-item {
+    list-style-type: none;
+    margin: 0 5px; /* Add space between the tab items */
+}
+
+/* Tab link styling */
+.nav-link {
+    border-radius: 5px; /* Rounded corners for tabs */
+    margin: 0 5px; /* Space around tabs */
+    padding: 10px 15px; /* Padding inside the tabs */
+    background-color: #343a40; /* Dark gray background for inactive tabs */
+    color: white; /* White text for inactive tabs */
+    cursor: pointer; /* Pointer cursor for tabs */
+}
+
+.nav-link.active {
+    background-color: darkblue; /* Highlight the active tab */
+    color: white; /* White text for the active tab */
+}
+
+/* Hover effect for tabs */
+.nav-link:hover {
+    background-color: #495057; /* Darker gray on hover */
+}
+
+/* Previous and next buttons */
+.previous, .next {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none; /* No border */
+    cursor: pointer;
+}
+
+/* Previous button alignment */
+.previous {
+    margin-right: auto; /* Aligns the button to the left */
+}
+
+/* Next button alignment */
+.next {
+    margin-left: auto; /* Aligns the button to the right */
+}
+
+/* Button hover effects */
+.previous:hover, .next:hover {
+    background-color: #212529; /* Darker background on hover */
+}
+
+/* Toolbar styles */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toolbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for toolbar buttons */
+.toolbar button:hover {
+    background-color: #495057;
+}
+
+/* Ensure all links have consistent styling */
 a {
     text-decoration: none;
     display: inline-block;
@@ -46,37 +121,7 @@ a:hover {
     color: white;
 }
 
-.previous {
-    background-color: black;
-    color: white;
+.tabs-content{
+    padding: 25px;
 }
 
-.next {
-    background-color: darkblue;
-    color: white;
-}
-
-.nav-item {
-    display: inline-block;
-    margin: 2px;
-}
-
-.toolbar {
-    display: flex;
-    gap: 10px;
-}
-
-.toolbar button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.nav-tabs{
-    border-bottom: none;
-}
-
-.toolbar1 {
-}

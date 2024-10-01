@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import "bootstrap/dist/css/bootstrap.css";
@@ -12,17 +12,28 @@ const ChapterPage = () => {
   const { id } = useParams();
   const card = chaptersData.find((c) => c.id === Number(id));
 
-  const handleTabClick = (event) => {
-    // Get all tab elements
-    const tabs = document.querySelectorAll(".nav-link");
-    tabs.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-    event.target.classList.add("active");
+  const [activeTab, setActiveTab] = useState("Core Data");
+
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
   };
 
   const insertMarkdown = (text) => {
-    // Logic to insert markdown content
+  };
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case "Core Data":
+        return <div className="tabs-content">Content for Core Data</div>;
+      case "Chronicles ":
+        return <div className="tabs-content">Content for Chronicles</div>;
+      case "Briefed":
+        return <div className="tabs-content">Content for Briefed</div>;
+      case "For You":
+        return <div className="tabs-content">Content for For You</div>;
+      default:
+        return <div className="tabs-content">Select a tab to see the content</div>;
+    }
   };
 
   return (
@@ -48,19 +59,21 @@ const ChapterPage = () => {
 
       <div className="container-fluid px-0">
         {/* Bootstrap row containing two columns (splits) */}
-        <div className="row g-0">
-          {/* First column */}
-          <div className="col-lg-6 vh-100 split1">
+
+          {/* First column - Display Tabs and Dynamic Content here */}
+          <div className="conatiner vh-100 split1">
             <Tabs handleTabClick={handleTabClick} />
+            <div className="tab-content">
+              {renderContent()}
+            </div>
           </div>
 
-          {/* Second column */}
-          <div className="col-lg-6 vh-100 split2">
+          {/* Second column - Toolbar (static or dynamic based on requirement) */}
+          {/* <div className="col-lg-6 vh-100 split2">
             <Toolbar insertMarkdown={insertMarkdown} />
             <MarkdownViewer />
-          </div>
+          </div> */}
         </div>
-      </div>
     </section>
   );
 };

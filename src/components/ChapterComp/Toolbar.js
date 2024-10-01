@@ -25,8 +25,6 @@ const Toolbar = ({ insertMarkdown }) => {
         <FaRocket />
       </button>
     </div>
-
-    
   );
 };
 
