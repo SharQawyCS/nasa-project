@@ -1,6 +1,6 @@
-// ChapterPage.js
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "bootstrap/dist/css/bootstrap.css";
 import chaptersData from "../../data/chaptersData.json"; // Import the card data from JSON
 import "./ChapterPage.css"; // Import the CSS file
@@ -15,11 +15,9 @@ const ChapterPage = () => {
   const handleTabClick = (event) => {
     // Get all tab elements
     const tabs = document.querySelectorAll(".nav-link");
-
     tabs.forEach((tab) => {
       tab.classList.remove("active");
     });
-
     event.target.classList.add("active");
   };
 
@@ -29,6 +27,25 @@ const ChapterPage = () => {
 
   return (
     <section className="chapter-page">
+      {/* Use Helmet to inject the chatbot scripts */}
+      <Helmet>
+        <script>
+          {`
+          window.embeddedChatbotConfig = {
+            chatbotId: "DDKxc6TlN_031skE8J1pc",
+            domain: "www.chatbase.co"
+          };
+          `}
+        </script>
+        <script
+          src="https://www.chatbase.co/embed.min.js"
+          chatbotId="DDKxc6TlN_031skE8J1pc"
+          domain="www.chatbase.co"
+          defer
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
+
       <div className="container-fluid px-0">
         {/* Bootstrap row containing two columns (splits) */}
         <div className="row g-0">
@@ -37,7 +54,7 @@ const ChapterPage = () => {
             <Tabs handleTabClick={handleTabClick} />
           </div>
 
-          {/* Separator between splits */}
+          {/* Second column */}
           <div className="col-lg-6 vh-100 split2">
             <Toolbar insertMarkdown={insertMarkdown} />
             <MarkdownViewer />

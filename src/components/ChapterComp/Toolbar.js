@@ -6,7 +6,7 @@ import { FaRocket } from "react-icons/fa";
 const Toolbar = ({ insertMarkdown }) => {
   return (
     <div className="toolbar mt-3">
-      <button className="btn btn-dark" onClick={() => insertMarkdown("# Heading 1")}>
+      <button className="btn btn-dark " onClick={() => insertMarkdown("# Heading 1")}>
         H1
       </button>
       <button className="btn btn-dark" onClick={() => insertMarkdown("## Heading 2")}>
@@ -25,6 +25,8 @@ const Toolbar = ({ insertMarkdown }) => {
         <FaRocket />
       </button>
     </div>
+
+    
   );
 };
 
