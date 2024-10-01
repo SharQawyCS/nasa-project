@@ -44,7 +44,7 @@
 
 /* Title styling */
 .game-card-title {
-    margin: 0 0 0.3rem 0 !important;
+    margin: 0.3rem 0 !important;
     font-size: 1.7rem;
     color: #fff;
 }

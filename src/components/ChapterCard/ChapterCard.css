@@ -10,7 +10,9 @@
         255,
         0.1
     ); /* Slight transparency for modern glassmorphism */
-    -webkit-backdrop-filter: blur(10px); /* Blurs the background for a glass effect on Safari */
+    -webkit-backdrop-filter: blur(
+        10px
+    ); /* Blurs the background for a glass effect on Safari */
     backdrop-filter: blur(10px); /* Blurs the background for a glass effect */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Softer shadow for a floating effect */
     transition:
@@ -43,7 +45,7 @@
 
 /* Title styling */
 .chapter-card-title {
-    margin: 0 0 0.3rem 0 !important;
+    margin: 0.3rem 0 !important;
     font-size: 1.7rem;
     color: #fff;
 }
