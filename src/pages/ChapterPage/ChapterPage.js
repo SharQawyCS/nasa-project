@@ -24,7 +24,7 @@ const ChapterPage = () => {
   const renderContent = () => {
     switch (activeTab) {
       case "Core Data":
-        return <div className="tabs-content">Content for Core Data</div>;
+        return <div className="tabs-content"><MarkdownViewer/></div>;
       case "Chronicles ":
         return <div className="tabs-content">Content for Chronicles</div>;
       case "Briefed":
