@@ -1,0 +1,19 @@
+.about-container {
+    padding: 20px;
+    color: #fff;
+    background-color: #1a1a1a; /* Dark background for the about page */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

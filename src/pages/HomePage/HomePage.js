@@ -7,7 +7,7 @@ import LabsSection from '../../components/LabsSection/LabsSection';
 
 const HomePage = () => {
     return (
-        <div className="landing-page">
+        <div className="home-page">
             <ChaptersSection />
             <GamesSection />
             <QuizesSection />

@@ -1,0 +1,33 @@
+.contributors-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contributors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.contributor-card {
+    background-color: #333; /* Darker background for contributor cards */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contributor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.contributor-name {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contributor-role {
+    font-size: 1rem;
+    color: #aaa;
+}

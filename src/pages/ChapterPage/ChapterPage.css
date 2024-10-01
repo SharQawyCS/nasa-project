@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-    background-color: black;
+    /* background-color: black; */
     color: white;
 }
 
@@ -74,10 +74,13 @@ a:hover {
     border-radius: 4px;
 }
 
-.nav-tabs{
+.nav-tabs {
     border-bottom: none;
 }
+<<<<<<< HEAD
 
 .toolbar1{
     
 }
+=======
+>>>>>>> 0c9f21e84daca62a4049344124d0048af97908bb

@@ -3,7 +3,7 @@ import chaptersData from '../../data/chaptersData.json';
 import ChapterCard from '../ChapterCard/ChapterCard';
 import Title from '../Title/Title';
 
-const ChaptersList = () => {
+const ChaptersSection = () => {
     return (
         <>
             <Title>Chapters</Title>
@@ -16,4 +16,4 @@ const ChaptersList = () => {
     );
 };
 
-export default ChaptersList;
+export default ChaptersSection;

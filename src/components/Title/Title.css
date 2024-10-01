@@ -3,7 +3,8 @@
     font-weight: bold; /* Bold text */
     color: #ffffff; /* White color for the title */
     text-align: center; /* Center the text */
-    margin: 20px 0; /* Space around the title */
+    /* margin: 20px 0; */
+    margin: 40px 0 20px 0; /* Space around the title */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px; /* Space between letters */
