@@ -13,7 +13,8 @@ body {
 }
 
 /* Layout split */
-.split1, .split2 {
+.split1,
+.split2 {
     width: 50%; /* Each split takes half the width */
     height: 100vh; /* Full viewport height */
 }
@@ -61,7 +62,8 @@ body {
 }
 
 /* Previous and next buttons */
-.previous, .next {
+.previous,
+.next {
     background-color: black;
     color: white;
     padding: 10px 15px;
@@ -81,7 +83,8 @@ body {
 }
 
 /* Button hover effects */
-.previous:hover, .next:hover {
+.previous:hover,
+.next:hover {
     background-color: #212529; /* Darker background on hover */
 }
 
@@ -117,11 +120,10 @@ a {
 }
 
 a:hover {
-    background-color: black;
+    /* background-color: black; */ /* This line causes problems in the chapter cards  */
     color: white;
 }
 
-.tabs-content{
+.tabs-content {
     padding: 25px;
 }
-
