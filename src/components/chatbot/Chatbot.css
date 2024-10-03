@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color:#000;
 }
 
 .chatbot-toggler {
@@ -33,7 +33,7 @@ body {
     transform: scale(0.5);
     opacity: 0;
     pointer-events: none;
-    background: #fff;
+    background: #000;
     border-radius: 15px;
     box-shadow: 0 0px 128px rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, opacity 0.3s;
@@ -104,7 +104,7 @@ body {
     height: 32px;
     width: 32px;
     color: darkblue;
-    background-color: #f2f2f2;
+    background-color: #000;
     text-align: center;
     line-height: 32px;
     border-radius: 4px;
@@ -120,8 +120,8 @@ body {
 }
 
 .chatbox .Incoming p {
-    color: #000;
-    background-color: #f2f2f2;
+    color: #f2f2f2;
+    background-color: #000;
     border-radius: 10px 10px 10px 0px;
 }
 
@@ -130,7 +130,7 @@ body {
     bottom: 0;
     width: 100%; /* Ensures it stretches to the width of the chatbot */
     gap: 5px;
-    background-color: #fff;
+    background-color: #000;
     padding: 10px 20px;
     border-top: 1px solid #ccc;
     display: flex;
@@ -144,6 +144,8 @@ body {
     outline: none;
     font-size: 0.95rem;
     resize: none;
+    color: #f2f2f2;
+    background-color: #000;
     padding: 12px 15px; /* Better padding to balance input size */
 }
 
