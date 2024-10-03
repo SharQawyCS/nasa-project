@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "tyoussef050@gmail.com",
+        "password": "123456",
+        "role": "admin",
+        "browse-history": [
+            {
+                "id": 1,
+                "title": "Helium-Shrouded Planet",
+                "description": "Planets having atmospheres rich in helium may be common in our galaxy, according to a new theory based on data from NASA's Spitzer Space Telescope",
+
+            }
+        ],
+        "favorites": [
+            {
+                "id": 1,
+                "title": "Helium-Shrouded Planet",
+                "description": "Planets having atmospheres rich in helium may be common in our galaxy, according to a new theory based on data from NASA's Spitzer Space Telescope",
+                "link": "/card/1",
+                "mark": "myFile.md"
+            }
+        ],
+        "chat-history":[
+            {
+                "date":"14/09/2023",
+                "message":"Hello"
+            }
+        ]
+
+    }
+]

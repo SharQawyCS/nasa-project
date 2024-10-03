@@ -9,10 +9,25 @@ import Toolbar from "../../components/ChapterComp/Toolbar";
 import MarkdownViewer from "../../components/markDown/MakDown";
 import Chatbot from "../../components/chatbot/chatbot"; 
 import Selection from "../../components/selection/selection"; // Corrected import
+import users from "../../data/users.json"; // Import the user data
+
+
+
 
 const ChapterPage = () => {
   const { id } = useParams();
   const card = chaptersData.find((c) => c.id === Number(id));
+
+  localStorage.setItem('myData', JSON.stringify({ name: 'Youssef', age: 30 }));
+  const loggedinuser =localStorage.getItem('myData');
+  const userData = users.find((user) => user.id === Number(id));
+  userData["browse-history"].push(
+    {
+      "id": card.id,
+      "title": card.title,
+      "description": card.description,
+    }
+  )
 
   const [activeTab, setActiveTab] = useState("Core Data");
 
