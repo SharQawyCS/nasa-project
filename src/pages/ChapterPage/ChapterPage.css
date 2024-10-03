@@ -48,7 +48,7 @@ body {
 /* Previous and next buttons */
 .previous,
 .next {
-    background-color: black;
+    /*background-color: black;*/
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -60,6 +60,172 @@ body {
 .previous {
     margin-right: auto; /* Aligns the button to the left */
 }
+.previous {
+    background-color: rgb(8, 23, 76);
+    color: white;
+    border-radius: 6px;
+    margin-right: 16px;
+    position: relative;
+}
+
+.previous:hover {
+    color: rgb(255, 255, 255);
+    
+    letter-spacing: 0.05em;
+}
+
+.previous:hover::before {
+    opacity: 1;
+  }
+
+.previous::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/abstract-planets-space-background_343732-19002.jpg");
+    background-attachment: fixed;
+    background-position: right;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+  }
+
+.previous::before {
+    content: "";
+    
+    background: linear-gradient(
+      45deg,
+      #4e1c6f, #5c050f, #ba1e68, #5643fd,
+      #7649fe, #fcfbfe, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+.middle-btns {
+    position: relative;
+    border-radius: 6px;
+    color: aqua;
+}
+
+.middle-btns:hover {
+    letter-spacing: 0.05em;
+    color: #b4a60a;
+}
+
+.btn-action {
+    transition: 0.5s;
+}
+
+.btn-action:hover::before {
+    opacity: 1;
+  }
+
+.btn-action::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #373737;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+  }
+
+.btn-action::before {
+    content: "";
+    
+    background: linear-gradient(
+      45deg,
+      #4e1c6f, #5c050f, #ba1e68, #5643fd,
+      #7649fe, #fcfbfe, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+.next {
+    background-color: darkblue;
+    color: white;
+    margin-left: 16px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.next:hover {
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+.next:hover::before {
+    opacity: 1;
+  }
+
+.next::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTZxqswF2NKQYUIw4YplTGy0OrwH_wzX65gw&s');
+    background-attachment: fixed;
+    background-position:center;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+  }
+
+.next::before {
+    content: "";
+    
+    background: linear-gradient(
+      45deg,
+      #4e1c6f, #5c050f, #ba1e68, #5643fd,
+      #7649fe, #fcfbfe, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+ @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+
 
 /* Next button alignment */
 .next {

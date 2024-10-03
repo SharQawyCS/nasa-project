@@ -12,7 +12,7 @@ const Tabs = ({ handleTabClick, activeTab }) => {
       <ul className="nav nav-tabs justify-content-center">
         <li className="nav-item">
           <button
-            className={`nav-link ${activeTab === "Core Data" ? "active" : ""}`}
+            className={`nav-link ${activeTab === "Core Data" ? "active" : "middle-btns btn-action"}`}
             onClick={() => handleTabClick("Core Data")}
           >
             Core Data
@@ -20,7 +20,7 @@ const Tabs = ({ handleTabClick, activeTab }) => {
         </li>
         <li className="nav-item">
           <button
-            className={`nav-link ${activeTab === "Chronicles" ? "active" : ""}`}
+            className={`nav-link ${activeTab === "Chronicles" ? "active" : "middle-btns btn-action"}`}
             onClick={() => handleTabClick("Chronicles")}
           >
             Chronicles
@@ -28,7 +28,7 @@ const Tabs = ({ handleTabClick, activeTab }) => {
         </li>
         <li className="nav-item">
           <button
-            className={`nav-link ${activeTab === "Briefed" ? "active" : ""}`}
+            className={`nav-link ${activeTab === "Briefed" ? "active" : "middle-btns btn-action"}`}
             onClick={() => handleTabClick("Briefed")}
           >
             Briefed
@@ -36,7 +36,7 @@ const Tabs = ({ handleTabClick, activeTab }) => {
         </li>
         <li className="nav-item">
           <button
-            className={`nav-link ${activeTab === "For You" ? "active" : ""}`}
+            className={`nav-link ${activeTab === "For You" ? "active" : "middle-btns btn-action"}`}
             onClick={() => handleTabClick("For You")}
           >
             For You
@@ -51,5 +51,4 @@ const Tabs = ({ handleTabClick, activeTab }) => {
     </div>
   );
 };
-
 export default Tabs;

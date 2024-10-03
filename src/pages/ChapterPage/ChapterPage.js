@@ -44,7 +44,6 @@ const ChapterPage = () => {
                 );
         }
     };
-
     return (
         <section className="chapter-page">
             {/* Use Helmet to inject the chatbot scripts */}

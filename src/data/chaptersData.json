@@ -1,46 +1,46 @@
 [
     {
         "id": "1",
-        "image": "https://images-assets.nasa.gov/image/PIA19344/PIA19344~orig.jpg",
-        "title": "Helium-Shrouded Planet",
-        "description": "Planets having atmospheres rich in helium may be common in our galaxy, according to a new theory based on data from NASA's Spitzer Space Telescope",
+        "image": "https://images.squarespace-cdn.com/content/v1/55a676ebe4b0e7324c26d410/723d68f7-0955-48d0-b495-79c18ff95dd3/2024terrexo2.2.jpg?format=1500w",
+        "title": "Zoo of Exoplanets",
+        "description": "Over 5000 exoplanets have been found and counting!",
         "link": "/card/1",
         "mark":"myFile.md"
     },
     {
         "id": "2",
-        "image": "https://via.placeholder.com/300x200",
-        "title": "Card 2",
-        "description": "This is the description for card 2.",
+        "image": "https://files.oaiusercontent.com/file-QPZIZtq7fD9pix9k2eaoyQnw?se=2024-10-02T20%3A38%3A46Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D38eace8c-fa6e-4999-bac9-2b7e0ec82a86.webp&sig=igDrnyfFJxBmUgQUQPy2FbuDSL9u4NPV8e4RHA8t4GM%3D",
+        "title": "Detecting Exoplanets",
+        "description": "Detecting exoplanets is much harder than observing planets in our solar system because they are far away and close to their bright host stars.",
         "link": "/card/2"
     },
     {
         "id": "3",
-        "image": "https://via.placeholder.com/300x200",
-        "title": "Card 3",
-        "description": "This is the description for card 3.",
+        "image": "https://cdn.mos.cms.futurecdn.net/phGZx9BD9nGAdiWfyokfxK.jpg",
+        "title": "TRAPPIST-1 System",
+        "description": "A bunch of planets as our solar systems",
         "link": "/card/3"
     },
     {
         "id": "4",
-        "image": "https://images-assets.nasa.gov/image/PIA19344/PIA19344~orig.jpg",
-        "title": "Helium-Shrouded Planet",
-        "description": "Planets having atmospheres rich in helium may be common in our galaxy, according to a new theory based on data from NASA's Spitzer Space Telescope",
+        "image": "https://www.syfy.com/sites/syfy/files/styles/hero_image__large__computer__alt/public/garlick_art_hr_8799.jpg",
+        "title": "HR 8799 SYSTEM",
+        "description": "It includes a sun-like star (HR 8799) and four giant planets orbiting it.",
         "link": "/card/4"
     },
     {
         "id": "5",
-        "image": "https://via.placeholder.com/300x200",
-        "title": "Card 5",
-        "description": "This is the description for card 2.",
+        "image": "https://cms.kavlifoundation.org/uploads/_1600xAUTO_fit_center-center_none/abstract-exoplanet.jpg",
+        "title": "Interesting Exoplanets 1",
+        "description": "Kepler-70b - WASP-12b - Kepler-16b",
         "link": "/card/5",
         "mark":"myFile.md"
     },
     {
         "id": "6",
-        "image": "https://via.placeholder.com/300x200",
-        "title": "Card 6",
-        "description": "This is the description for card 3.",
+        "image": "https://files.oaiusercontent.com/file-VL3jTwbkFQqsCJYihPD9Q1UN?se=2024-10-02T21%3A10%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3f901d65-8c03-4c44-89ad-5951eb84d80e.webp&sig=prji7jcnhBAJ/U8qMWEO0wAGtWVOdPK/iHN5CPCjPhw%3D",
+        "title": "Interesting Exoplanets 2",
+        "description": "55 Cancri e - HD 189733 b - TrEs-2b",
         "link": "/card/6"
     }
 ]
