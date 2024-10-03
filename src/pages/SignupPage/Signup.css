@@ -38,12 +38,13 @@
   }
   
   .input_box input {
-    border: 2px solid #f0f0f0;
+    border: 2px solid #ffffff91;
     border-radius: 4px;
     display: block;
     font-size: 12px;
     padding: 10px;
     width: 100%;
+    background-color: #ffffff91;
   }
   
   .input_box input:focus {
