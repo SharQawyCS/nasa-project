@@ -8,6 +8,7 @@ import Tabs from "../../components/ChapterComp/tabs";
 import Toolbar from "../../components/ChapterComp/Toolbar";
 import MarkdownViewer from "../../components/markDown/MakDown";
 import Chatbot from "../../components/chatbot/chatbot"; 
+import Selection from "../../components/selection/selection"; // Corrected import
 
 const ChapterPage = () => {
   const { id } = useParams();
@@ -19,25 +20,48 @@ const ChapterPage = () => {
     setActiveTab(tabName);
   };
 
-  const insertMarkdown = (text) => {};
+  const insertMarkdown = (text) => {
+    // Function to handle markdown insertion if needed
+  };
 
   const renderContent = () => {
     switch (activeTab) {
       case "Core Data":
         return (
-          <div className="tabs-content">
-            <MarkdownViewer/>
+          <div className="tabs-content text-element">
+            <MarkdownViewer />
+            <Selection /> {/* Corrected component usage */}
           </div>
         );
       case "Chronicles":
-        return <div className="tabs-content">Content for Chronicles</div>;
+        return (
+          <div className="tabs-content">
+            Content for Chronicles
+            {/* Adding selection component here */}
+            <Selection /> {/* Corrected component usage */}
+          </div>
+        );
       case "Briefed":
-        return <div className="tabs-content">Content for Briefed</div>;
+        return (
+          <div className="tabs-content">
+            Content for Briefed
+            {/* Adding selection component here as well if needed */}
+            <Selection /> {/* Corrected component usage */}
+          </div>
+        );
       case "For You":
-        return <div className="tabs-content">Content for For You</div>;
+        return (
+          <div className="tabs-content">
+            Content for For You
+            {/* Optionally add selection component */}
+            <Selection /> {/* Corrected component usage */}
+          </div>
+        );
       default:
         return (
-          <div className="tabs-content">Select a tab to see the content</div>
+          <div className="tabs-content">
+            Select a tab to see the content
+          </div>
         );
     }
   };
@@ -45,9 +69,13 @@ const ChapterPage = () => {
   return (
     <section className="chapter-page">
       <Helmet>
+        {/* Add any head/meta elements you need */}
       </Helmet>
       <div className="container vh-100 split1">
+        {/* Tabs component to switch between content */}
         <Tabs handleTabClick={handleTabClick} />
+        
+        {/* Dynamic tab content */}
         <div className="tab-content">{renderContent()}</div>
       </div>
       

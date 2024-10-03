@@ -6,7 +6,7 @@ This is an example of markdown rendering in a React app!
 - Another bullet point
 
 **Bold text**
-
+    
 _Italic text_
 
 [Link to Google](https://www.google.com)

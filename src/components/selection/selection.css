@@ -1,0 +1,60 @@
+#share-btn {
+    
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: #56b8f5;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none; /* Ensure you toggle this dynamically */
+    transition: color 0.2s, background-color 0.2s ease-in-out, transform 0.2s;
+  }
+
+share-btn:hover {
+    color: #fff;
+    background-color: #56b8f5;
+    transform: scale(1.1); /* Add slight scaling on hover */
+}
+
+@keyframes btnEntrance { 
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    100% {
+      opacity: 1;
+      transform: scale3d(1, 1, 1); /* Ensure scaling is back to normal */
+    }    
+}
+
+@media(max-width: 992px) {
+    .container { padding: 1.25rem 6rem; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.75rem; }
+    /* Adjust the share button for medium screens */
+    #share-btn {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    html { font-size: 12px; }
+    .container { padding: 1rem 3rem; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    hr { margin: 1.5rem 0; }
+    /* Adjust the share button for small screens */
+    #share-btn {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 0.875rem;
+    }
+}
