@@ -1,13 +1,12 @@
-/* General page layout */
 body {
     background-color: black;
     color: white;
-    margin: 0; /* Remove any default margins from the body */
+    margin: 0; 
 }
 
 .chapter-page {
-    margin: 0; /* Remove any margins */
-    padding: 0; /* Remove padding if necessary */
+    margin: 0; 
+    padding: 0; 
 }
 
 
