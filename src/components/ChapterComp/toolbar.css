@@ -1,0 +1,41 @@
+/* Toolbar styles */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toolbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for toolbar buttons */
+.toolbar button:hover {
+    background-color: #495057;
+}
+
+/* Ensure all links have consistent styling */
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    /* background-color: black; */ /* This line causes problems in the chapter cards  */
+    color: white;
+}
+
+.tabs-content {
+    padding: 25px;
+}
+
+

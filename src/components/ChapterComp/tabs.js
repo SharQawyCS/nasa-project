@@ -1,5 +1,5 @@
 import React from "react";
-
+import './tabs.css'
 const Tabs = ({ handleTabClick, activeTab }) => {
   return (
     <div className="d-flex justify-content-between align-items-center">

@@ -2,6 +2,7 @@
 import React from "react";
 import { MdFormatListBulleted } from "react-icons/md";
 import { FaRocket } from "react-icons/fa";
+import "./toolbar.css";
 
 const Toolbar = ({ insertMarkdown }) => {
   return (

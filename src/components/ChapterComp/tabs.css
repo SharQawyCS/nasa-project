@@ -1,0 +1,67 @@
+/* Tabs container styling */
+.nav-tabs {
+    flex-grow: 1; /* Allows the tab container to take up the available space */
+    justify-content: center; /* Centers the tabs */
+    display: flex; /* Use flexbox for layout */
+    border-bottom: none; /* Remove bottom border */
+}
+
+/* Styling for tab items */
+.nav-item {
+    list-style-type: none;
+    margin: 0 5px; /* Add space between the tab items */
+}
+
+/* Tab link styling */
+.nav-link {
+    border-radius: 5px; /* Rounded corners for tabs */
+    margin: 0 5px; /* Space around tabs */
+    padding: 10px 15px; /* Padding inside the tabs */
+    background-color: #343a40; /* Dark gray background for inactive tabs */
+    color: white; /* White text for inactive tabs */
+    cursor: pointer; /* Pointer cursor for tabs */
+}
+
+.nav-link.active {
+    background-color: darkblue; /* Highlight the active tab */
+    color: white; /* White text for the active tab */
+}
+
+/* Hover effect for tabs */
+.nav-link:hover {
+    background-color: #495057; /* Darker gray on hover */
+}
+
+/* Previous and next buttons */
+.previous,
+.next {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none; /* No border */
+    cursor: pointer;
+}
+
+/* Previous button alignment */
+.previous {
+    margin-right: auto; /* Aligns the button to the left */
+}
+
+/* Next button alignment */
+.next {
+    margin-left: auto; /* Aligns the button to the right */
+}
+
+/* Button hover effects */
+.previous:hover,
+.next:hover {
+    background-color: #212529; /* Darker background on hover */
+}
+
+/* Toolbar styles */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
