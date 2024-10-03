@@ -42,6 +42,15 @@ const Tabs = ({ handleTabClick, activeTab }) => {
             For You
           </button>
         </li>
+        <li className="nav-item">
+          <button
+            className={`nav-link ${activeTab === "Quizzes" ? "active" : ""}`}
+            onClick={() => handleTabClick("Quizzes")}
+          >
+            Quizzes
+          </button>
+        </li>
+
       </ul>
 
       {/* Next button aligned to the right */}

@@ -72,6 +72,14 @@ const ChapterPage = () => {
             <Selection /> {/* Corrected component usage */}
           </div>
         );
+      case "Quizzes":
+        return (
+          <div className="tabs-content">
+            Content for Quizzes
+            {/* Optionally add selection component */}
+            <Selection /> {/* Corrected component usage */}
+          </div>
+        );
       default:
         return (
           <div className="tabs-content">
