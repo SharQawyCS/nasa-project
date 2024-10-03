@@ -20,7 +20,7 @@ const LoginPage = () => {
       localStorage.setItem("phone", current_user.phone);
       localStorage.setItem("username", current_user.username);
       localStorage.setItem("isLoggedIn", true);
-      window.location.href = "main.html";
+      window.location.href = "http://localhost:3000/";
     } else {
       alert("Login failed");
       localStorage.setItem("isLoggedIn", false);
