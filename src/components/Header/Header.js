@@ -5,6 +5,7 @@ import './Header.css'; // Import the custom CSS
 
 const logout = () => {
     localStorage.setItem('isLoggedIn','false');
+    window.location.reload();
 }
 
 const Header = () => {

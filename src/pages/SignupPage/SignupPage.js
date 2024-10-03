@@ -82,6 +82,7 @@ const SignUp = () => {
       users.push({ firstname, username, email, password, phone: number });
       localStorage.setItem("users", JSON.stringify(users));
       alert("User successfully signed up!");
+      window.location.href = "http://localhost:3000/login";
       // Redirect to login page
     }
   };
