@@ -5,7 +5,6 @@ body {
     margin: 0; /* Remove any default margins from the body */
 }
 
-/* Chapter Page section */
 .chapter-page {
     margin: 0; /* Remove any margins */
     padding: 0; /* Remove padding if necessary */
@@ -104,7 +103,7 @@ a {
 }
 
 a:hover {
-    /* background-color: black; */ /* This line causes problems in the chapter cards  */
+    /* background-color: black; / / This line causes problems in the chapter cards  */
     color: white;
 }
 
