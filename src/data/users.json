@@ -9,8 +9,7 @@
             {
                 "id": 1,
                 "title": "Helium-Shrouded Planet",
-                "description": "Planets having atmospheres rich in helium may be common in our galaxy, according to a new theory based on data from NASA's Spitzer Space Telescope",
-
+                "description": "Planets having atmospheres rich in helium may be common in our galaxy, according to a new theory based on data from NASA's Spitzer Space Telescope"
             }
         ],
         "favorites": [
@@ -22,12 +21,11 @@
                 "mark": "myFile.md"
             }
         ],
-        "chat-history":[
+        "chat-history": [
             {
-                "date":"14/09/2023",
-                "message":"Hello"
+                "date": "14/09/2023",
+                "message": "Hello"
             }
         ]
-
     }
 ]

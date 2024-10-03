@@ -18,16 +18,16 @@ const ChapterPage = () => {
   const { id } = useParams();
   const card = chaptersData.find((c) => c.id === Number(id));
 
-  localStorage.setItem('myData', JSON.stringify({ name: 'Youssef', age: 30 }));
-  const loggedinuser =localStorage.getItem('myData');
-  const userData = users.find((user) => user.id === Number(id));
-  userData["browse-history"].push(
-    {
-      "id": card.id,
-      "title": card.title,
-      "description": card.description,
-    }
-  )
+  // localStorage.setItem('myData', JSON.stringify({ name: 'Youssef', age: 30 }));
+  // const loggedinuser =localStorage.getItem('myData');
+  // const userData = users.find((user) => user.id === Number(id));
+  // userData["browse-history"].push(
+  //   {
+  //     "id": card.id,
+  //     "title": card.title,
+  //     "description": card.description,
+  //   }
+  // )
 
   const [activeTab, setActiveTab] = useState("Core Data");
 
