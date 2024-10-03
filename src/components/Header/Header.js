@@ -11,6 +11,8 @@ const Header = () => {
                 {/* Use Link instead of a for client-side navigation */}
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/signup">Signup</Link>
                 {/* <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link> */}
             </nav>
